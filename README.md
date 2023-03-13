@@ -4,7 +4,7 @@
 
 <div align="center">
     
-Currency Convertor converts the desired currency into another desired currency.
+Currency Convertor converts the desired currency into another desired currency. ( It may not work properly now, as It's integrated with a free conversion API, but It'll work fine once the API key get updated. This updation of API key can be done in 3-4 business day. Ping me if you have any queries.)
   
   </div>
 
