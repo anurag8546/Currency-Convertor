@@ -157,6 +157,23 @@ const currencies = [
   };
   
   const convert = (event) => {
+
+    const amount = document.getElementById("Amount").value;
+    console.log(document.getElementById("Amount").value);
+    if(amount==""|| amount==null || !amount){
+      alert("Kindly fill amount");
+      return  
+    }
+  let ac =document.getElementsByClassName("select-text")[0].value;
+  let ca = document.getElementsByClassName("select-text")[1].value;
+  
+  console.log(ac);
+  console.log(ca);
+  if(ac=="From"||ca=="To"){
+    alert("Kindly select currencies for conversion");
+    return  
+  }
+
     toast(`Preparing to convert ....`);
     const btn = event ? event.target : document.querySelector("button");
     const selected = getSelectedCurrency();
